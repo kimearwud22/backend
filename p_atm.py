@@ -20,9 +20,9 @@ for i in range(3):
             quit() #fungsi ini digunakan untuk menghentikan program
 #untuk melanjutkan program ketika sudah benarkita membuat programnya dengan menggunakan program pengulangan while
 while True:
-    print("============================")
+    print("============================") #disini menu yang ada dibank
     print("Silakan pilih pilih MENU")
-    for item in range(0, len(list)):
+    for item in range(0, len(list)): #menggunakan looping range dan len untuk menampilkan list otomatis langsung ada angka listnya
         print(f'{item +1}.{list[item]}')
     item_menu = input('Silahkan Pilih Platfom 1-4 : ')
     if item_menu == "1":
@@ -89,10 +89,10 @@ while True:
         continue
 
     elif item_menu == "4":
-        pilih = input('Apakah mau melanjutkan ? y/n:')
-        if pilih == 'y' or pilih == 'Y':
+        pilih = input('Apakah anda akan berhendi ? y/n:')
+        if pilih == 'n' or pilih == 'Y':
             continue
-        elif pilih == 'N' or pilih == 'n':
+        elif pilih == 'y' or pilih == 'N':
             print('proses berakhir')
             break
         else:
